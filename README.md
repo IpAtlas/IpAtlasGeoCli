@@ -17,9 +17,22 @@ To set the environment variable for `C:/Program Files/IpAtlas/bin/geoip.exe`, fo
 Now you should be able to run `geoip.exe` from anywhere in the command prompt without specifying the full path.
 
 # Usage
+The first step before using the CLI command features from below is to set a valid context license key.  
+`geoip settings --set-license <LICENSE KEY>`  
+
+How to get a valid license key will be provided soon. If you'd like to get beta access, feel free to contact us on support@ipatlas.net
 
 ## IP Lookup
-## Query IP Database Metadata
-## Pin IP Database
+Perform IP Address Geolocation lookup.  
+`geoip lookup -ip <IP ADDRESS>`
 
-# IP Atlas Geolocation
+## Query IP Database Metadata
+Retrieve information about available IP Database versions:   
+`geoip database --get`
+
+To obtain metadata about a specific IP Database version:  
+`geoip database --get-version <DATABASE VERSION>` 
+
+## Pin IP Database
+To pin the IP Database you want to use for an extended period of time  
+`geoip database --pin-database <DATABASE VERSION>`
